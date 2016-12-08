@@ -120,13 +120,19 @@ body {
 }
 .viewport a:link:after, 
 .viewport a:visited:after { 
-    content: " <" attr(href) "> ";  
+    content: " <" attr(href) "> ";
+    color: #008DA6;  
+    font-size: 10px;
 }
 .viewport a[href^="/"]:after { 
     content: " <http://confluence.atlassian.com" attr(href) "> ";
+    color: #008DA6;
+    font-size: 10px;
 }
 .viewport a[href^="#"]:after { 
-    content: ""; 
+    content: "";
+    color: #008DA6; 
+    font-size: 10px;
 }
 .toc-link:after { 
   content: none !important; 
