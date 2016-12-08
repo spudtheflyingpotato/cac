@@ -1,3 +1,4 @@
+@import url(print.css) print;
 @font-face {
     font-family: "Circular Pro";
     src: url(fonts/lineto-circular-black-c.eot);
