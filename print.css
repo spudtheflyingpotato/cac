@@ -122,8 +122,13 @@ body {
 .viewport a[href^="/"]:after { 
     content: " <http://confluence.atlassian.com" attr(href) "> "; 
 }
+<<<<<<< Updated upstream
 .viewport a[href^="#"]:after { 
     content: ""; 
+=======
+.toc-link:after { 
+  content: none !important; 
+>>>>>>> Stashed changes
 }
 #content-metadata {
     display:none;
@@ -135,6 +140,7 @@ body {
     display:none;
 }
 .breadcrumbSpacerOverride {
+<<<<<<< Updated upstream
     display:none;
 }
 .viewport table.aui.aui-table-interactive {
@@ -166,4 +172,8 @@ body {
 .viewport img {
    max-width: 100% !important;
    page-break-inside: avoid;
+}
+
+.space-breadcrumbs-wrapper, .breadcrumbSpacerOverride {
+    display: none!important;
 }
