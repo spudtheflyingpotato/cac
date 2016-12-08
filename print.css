@@ -21,7 +21,6 @@ body {
 .viewport #sp-viewport-control-opener,
 .viewport .aui-header-secondary,
 .viewport .comments,
-.viewport .expand-container,
 .viewport .navigation-panel,
 .viewport .sp-viewport-control-container,
 .space-breadcrumbs-wrapper, 
@@ -163,4 +162,8 @@ body {
 .viewport img {
    max-width: 100% !important;
    page-break-inside: avoid;
+}
+
+.viewport .expand-container {
+  display: block !important;
 }
