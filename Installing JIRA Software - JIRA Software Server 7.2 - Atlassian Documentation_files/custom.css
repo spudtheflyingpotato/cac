@@ -1,0 +1,17 @@
+
+/* ADM-31549: more padding for welcome message images */
+.welcome-message .confluence-embedded-image {
+    padding: 12px;
+}
+
+/* Hide underlines from links in page content, and show them on hover */
+.wiki-content a:link, .wiki-content a:visited, .wiki-content a:active {
+    text-decoration: none;
+}
+
+.wiki-content a:hover {
+    text-decoration: underline;
+}
+
+
+
