@@ -16,26 +16,27 @@ body {
     padding: 0; 
     float: none !important; 
 }
-#header {
-    display:none;
-}
-.recently-updated .more-link-container {
-    display: none
-}
-.toc-macro.non-printable {
-    display: none
-}
-.powered-by {
-    display: none!important
-}
+
 .viewport #footer,
 .viewport #sp-viewport-control-opener,
 .viewport .aui-header-secondary,
 .viewport .comments,
 .viewport .expand-container,
 .viewport .navigation-panel,
-.viewport .sp-viewport-control-container {
-    display: none!important
+.viewport .sp-viewport-control-container,
+.space-breadcrumbs-wrapper, 
+.breadcrumbSpacerOverride,
+.powered-by,
+.toc-macro.non-printable,
+.recently-updated .more-link-container,
+.viewport #header,
+#content-metadata,
+#wasthishelpful,
+.aac-comments,
+.scroll-to-fixed-fixed,
+.search-macro, 
+.search-macro-large {
+    display: none!important;
 }
 .viewport .footer-body,
 .viewport.aui-page-fixed .aui-page-panel-inner {
@@ -107,9 +108,6 @@ body {
 .viewport li, .viewport ul {
   line-height: 24px;
 }
-.space-breadcrumbs-wrapper {
-    display: none;
-}
 .viewport a:link,.viewport a:visited {
   color:#172b4d;
   text-decoration: none;
@@ -121,29 +119,11 @@ body {
 .viewport a[href^="/"]:after { 
     content: " <http://confluence.atlassian.com" attr(href) "> "; 
 }
-<<<<<<< Updated upstream
 .viewport a[href^="#"]:after { 
     content: ""; 
-=======
+}
 .toc-link:after { 
   content: none !important; 
->>>>>>> Stashed changes
-}
-#content-metadata {
-    display:none;
-}
-#wasthishelpful {
-    display:none;
-}
-.aac-comments {
-    display:none;
-}
-.breadcrumbSpacerOverride {
-<<<<<<< Updated upstream
-    display:none;
-}
-.scroll-to-fixed-fixed {
-    display:none;
 }
 .viewport table.aui.aui-table-interactive {
     border-collapse: collapse;
@@ -168,17 +148,7 @@ body {
     font-weight: bold;
     background-color: #f0f0f0;
 }
-.search-macro, .search-macro-large {
-    display: none;
-<<<<<<< Updated upstream
-}
 .viewport img {
    max-width: 100% !important;
    page-break-inside: avoid;
-}
-
-.space-breadcrumbs-wrapper, .breadcrumbSpacerOverride {
-    display: none!important;
-=======
->>>>>>> Stashed changes
 }
