@@ -16,7 +16,6 @@ body {
     padding: 0; 
     float: none !important; 
 }
-
 .viewport #footer,
 .viewport #sp-viewport-control-opener,
 .viewport .aui-header-secondary,
@@ -163,7 +162,6 @@ body {
    max-width: 100% !important;
    page-break-inside: avoid;
 }
-
 .viewport .expand-container {
   display: block !important;
 }
