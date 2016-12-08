@@ -1,3 +1,4 @@
+@import url (normalize.css);
 @page {
     margin: 2cm;
 }
@@ -44,6 +45,7 @@ body {
     page-break-inside: avoid;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #172b4d;
+    page-break-after: avoid;
 }
 .viewport p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
