@@ -165,3 +165,20 @@ body {
 .viewport .expand-container {
   display: block !important;
 }
+.viewport .expand-container .expand-content.expand-hidden {
+    display: block !important;
+    opacity: 1 !important;
+} 
+.expand-control {
+  display: none;
+}
+.viewport table.aui.aui-table-interactive td, .viewport table.aui.aui-table-interactive th {
+  min-width: 100px;
+}
+.viewport table.aui.aui-table-interactive th {
+  font-weight: 700;
+  background-color: white;
+}
+.viewport #page .panel {
+    background-color: white !important;
+}
