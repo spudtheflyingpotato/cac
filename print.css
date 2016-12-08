@@ -44,7 +44,7 @@ body {
 .viewport code, .viewport kbd, .viewport pre {
     font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Courier, monospace;
 }
-.viewport h1, .viewport h2, .viewport h3, .viewport h4, .viewport h5, .viewport h6, {
+.viewport h1, .viewport h2, .viewport h3, .viewport h4, .viewport h5, .viewport h6 {
     page-break-inside: avoid;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #172b4d;
@@ -53,12 +53,14 @@ body {
 .viewport p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #172b4d;
+    page-break-inside: avoid;
 }
 .viewport h1 {
     font-size: 29px;
     font-weight: 500;
     letter-spacing: -.01em;
     line-height: 32px;
+    margin-top: 48px;
     page-break-before: always;
 }
 .viewport h2 {
@@ -143,17 +145,25 @@ body {
     line-height: 24px;
     page-break-inside: avoid;
 }
-.viewport table.aui.aui-table-interactive tbody tr td,
-.viewport table.aui.aui-table-interactive tbody tr th {
+.viewport table.aui.aui-table-interactive td,
+.viewport table.aui.aui-table-interactive th {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
     font-weight: 400;
     margin: 0;
     padding: 10px;
     text-align: left;
-    border:none;
+    border: none;
+    vertical-align: top;
 }
-.viewport table.aui.aui-table-interactive tbody tr th {
+.viewport .aui.aui-table-interactive th {
     font-weight: bold;
     background-color: #f0f0f0;
+}
+.search-macro, .search-macro-large {
+    display: none;
+}
+.viewport img {
+   max-width: 100% !important;
+   page-break-inside: avoid;
 }
