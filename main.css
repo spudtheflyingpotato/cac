@@ -473,6 +473,25 @@ span.icon-personal-space {
 }
 
 @media print {
+
+    #menu { 
+    display: none; 
+    } 
+
+    #wrapper, #content { 
+    width: auto; 
+    margin: 0 5%; 
+    padding: 0; 
+    border: 0; 
+    float: none !important; 
+    color: black; 
+    background: transparent; 
+    }
+
+    body { 
+    background: transparent; 
+    } 
+   
     .recently-updated .more-link-container {
         display: none
     }
