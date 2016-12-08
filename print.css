@@ -60,7 +60,6 @@ body {
     font-weight: 500;
     letter-spacing: -.01em;
     line-height: 32px;
-    margin-top: 48px;
     page-break-before: always;
 }
 .viewport h2 {
@@ -143,6 +142,9 @@ body {
 <<<<<<< Updated upstream
     display:none;
 }
+.scroll-to-fixed-fixed {
+    display:none;
+}
 .viewport table.aui.aui-table-interactive {
     border-collapse: collapse;
     border-radius: 0;
@@ -168,6 +170,7 @@ body {
 }
 .search-macro, .search-macro-large {
     display: none;
+<<<<<<< Updated upstream
 }
 .viewport img {
    max-width: 100% !important;
@@ -176,4 +179,6 @@ body {
 
 .space-breadcrumbs-wrapper, .breadcrumbSpacerOverride {
     display: none!important;
+=======
+>>>>>>> Stashed changes
 }
