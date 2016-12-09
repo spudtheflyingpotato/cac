@@ -164,6 +164,7 @@ body {
 }
 .viewport .expand-container {
   display: block !important;
+  margin-left: -40px;
 }
 .viewport .expand-container .expand-content.expand-hidden {
     display: block !important;
@@ -181,6 +182,7 @@ body {
 }
 .viewport #page .panel {
     background-color: white !important;
+   	border: none !important;
 }
 .aui-message.hint:before, .aui-message-hint:before, .aui-message.info:before, .aui-message-info:before {
     background-color: white;
