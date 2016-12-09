@@ -1,33 +1,48 @@
 @page 
 {
     margin: 2cm;
-    @top-left
-    {
-        content: element(header);
-    }
-    @bottom-left 
-    {
-        content: element(footer);
-    }
 }
 
 @page title
 {
-    margin: 2cm;
-    @top-left
-    {        
-    }
-    @bottom-left 
-    {        
+}
+@page :left
+{
+    @top-right-corner
+    {
+        content: counter(page);
+        font-size: 10pt;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif !important;
     }
 }
 
-body 
+@page :right
 {
-    background: white;
-    width: auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-    color: #000;
+    @top-left
+    {
+        content: element(header);
+        font-size: 10pt;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif !important;
+    }
+    @top-right-corner
+    {
+        content: counter(page);
+        font-size: 10pt;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif !important;
+    }
+}
+
+html, body 
+{
+    background: white !important;
+    width: auto !important;
+    color: #000 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.wiki-content {
+    color: #000 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif !important;
 }
 
 body, 
@@ -40,7 +55,8 @@ ol,
 table,
 .wiki-content table,
 .bodytext, 
-.stepfield 
+.stepfield,
+.wiki-content
 {
     font-size: 14px;
     font-weight: 400;
@@ -48,7 +64,7 @@ table,
     margin-top: 12px;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 a:link,
@@ -56,14 +72,12 @@ a:visited
 {
     text-decoration:none;
 }
-
 a:link:after 
 { 
     content: " <" attr(href) "> ";  
     color: #008DA6; 
     font-size: 10px;
 }
-
 a[href^="/"]:after 
 { 
     content: " <http://confluence.atlassian.com" attr(href) "> ";
@@ -117,17 +131,6 @@ a, #default-labels-header a.add
     list-style-type:disc;
 }
 
-/* table view for several macros*/
-.tableview td 
-{
-    border-color:#CCCCCC;
-    border-style:solid;
-    border-width:0 0 1px;
-    margin:0;
-    padding:4px 10px 4px 5px;
-    text-align:left;
-}
-
 /* built in gallery macro */
 div.gallery>table
 {
@@ -169,11 +172,6 @@ div.panelMacro
     page-break-inside: avoid;
 }
 
-th.confluenceTh 
-{
-    color: #003366;
-    background-color: #f0f0f0;
-}
 
 /* wraps the section columns underneath each other so they don't run off the page */
 table.sectionMacro 
@@ -284,7 +282,6 @@ h1, .wiki-content h1
     font-weight: 500;
     letter-spacing: -.01em;
     line-height: 32px;
-    page-break-before: always;
 }
 
 h2, .wiki-content h2 
@@ -382,11 +379,6 @@ blockquote em
     font-style: normal;
 }
 
-div.small 
-{
-    font-size: 9px;
-}
-
 h1.pagetitle 
 {
     page-break-before: always;
@@ -409,7 +401,6 @@ span.tocnum:before
 
 div.toc 
 {
-    page-break-after: always;
     counter-reset: chapter 0;
 }
 
@@ -797,6 +788,7 @@ table.confluenceTable th.confluenceTh
 }
 
 .wiki-content td.confluenceTd,
+.tableview td,
 td.confluenceTd, 
 table.confluenceTable td.confluenceTd,
 table.sectionMacro td
