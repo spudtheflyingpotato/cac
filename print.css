@@ -182,3 +182,12 @@ body {
 .viewport #page .panel {
     background-color: white !important;
 }
+.aui-message.hint:before, .aui-message-hint:before, .aui-message.info:before, .aui-message-info:before {
+    background-color: white;
+}
+.aui-message.hint:after, .aui-message-hint:after, .aui-message.info:after, .aui-message-info:after {
+    color: #172B4D;
+}
+.aui-message {
+    border-color: #BBB;
+}
