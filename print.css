@@ -164,7 +164,7 @@ body {
 }
 .viewport .expand-container {
   display: block !important;
-  margin-left: -40px;
+  margin-left:-20px;
 }
 .viewport .expand-container .expand-content.expand-hidden {
     display: block !important;
@@ -192,4 +192,7 @@ body {
 }
 .aui-message {
     border-color: #BBB;
+}
+.viewport #page .content-panel .panel {
+  padding: 0 !important;
 }
